@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		37ABD2DB1CF8FC1D0044F3D3 /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37ABD2DA1CF8FC1D0044F3D3 /* Avatar.swift */; };
 		88916B2D1CF0DF2F00469F91 /* MessageKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88916B221CF0DF2F00469F91 /* MessageKit.framework */; };
 		88916B401CF0DF5100469F91 /* MessageKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 88916B3E1CF0DF5100469F91 /* MessageKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		88916B451CF0DF5900469F91 /* MessageKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88916B431CF0DF5900469F91 /* MessageKitTests.swift */; };
@@ -24,6 +25,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		37ABD2D81CF8FBF50044F3D3 /* Avatar.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = Avatar.playground; sourceTree = "<group>"; };
+		37ABD2DA1CF8FC1D0044F3D3 /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		88916B221CF0DF2F00469F91 /* MessageKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MessageKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		88916B2C1CF0DF2F00469F91 /* MessageKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MessageKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		88916B3D1CF0DF5100469F91 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +55,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		37ABD2D91CF8FC000044F3D3 /* Playgrounds */ = {
+			isa = PBXGroup;
+			children = (
+				37ABD2D81CF8FBF50044F3D3 /* Avatar.playground */,
+			);
+			name = Playgrounds;
+			sourceTree = "<group>";
+		};
 		88916B181CF0DF2F00469F91 = {
 			isa = PBXGroup;
 			children = (
@@ -76,6 +87,8 @@
 				88916B3D1CF0DF5100469F91 /* Info.plist */,
 				88916B461CF0DFE600469F91 /* MessageData.swift */,
 				88916B3E1CF0DF5100469F91 /* MessageKit.h */,
+				37ABD2DA1CF8FC1D0044F3D3 /* Avatar.swift */,
+				37ABD2D91CF8FC000044F3D3 /* Playgrounds */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -197,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37ABD2DB1CF8FC1D0044F3D3 /* Avatar.swift in Sources */,
 				88916B471CF0DFE600469F91 /* MessageData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,6 +401,7 @@
 				88916B381CF0DF2F00469F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		88916B391CF0DF2F00469F91 /* Build configuration list for PBXNativeTarget "MessageKitTests" */ = {
 			isa = XCConfigurationList;
@@ -395,6 +410,7 @@
 				88916B3B1CF0DF2F00469F91 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
