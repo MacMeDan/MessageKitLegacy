@@ -28,26 +28,13 @@ class AvatarTests: XCTestCase {
     
     func testAvatarWithInitals() {
         // if the image is nil then the initals will be instatiated and used
-        let initalsAvatar = Avatar(image: UIImage(), initals: "DL", diameter: 20, backgroundColor: .red)
+        let initalsAvatar = Avatar(image: UIImage(), initals: "DL", diameter: 20)
         XCTAssertNotNil(initalsAvatar)
         XCTAssertEqual(initalsAvatar.imageView?.frame.width, 20)
         XCTAssertEqual(initalsAvatar.imageView?.frame.height, 20)
         XCTAssertEqual(initalsAvatar.initalsLabel?.frame.width, 20)
-        XCTAssertEqual(initalsAvatar.backgroundColor, .red)
         //if the image is not nil then the initals are not set
         XCTAssertEqual(initalsAvatar.initalsLabel?.text, "DL")
     }
-    
-    func testAvatarWithImage() {
-        let image = defaultImage().imageOfArtboard()
-        let avatarWithImage = Avatar(image: image, initals: "DL", diameter: 40, backgroundColor: .gray)
-        XCTAssertEqual(avatarWithImage.initalsLabel?.text, "DL")
-    }
-    
-    
-   
-    
-
-
     
 }
