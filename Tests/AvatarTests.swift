@@ -16,22 +16,24 @@ class AvatarTests: XCTestCase {
     }
     
     func testAvatar() {
-        let avatar = Avatar(image: UIImage())
-        XCTAssertNotNil(avatar)
-        XCTAssertEqual(avatar.imageView?.frame.width, 40)
-        XCTAssertEqual(avatar.imageView?.frame.height, 40)
-        XCTAssertEqual(avatar.initalsLabel?.frame.width, 40)
-        XCTAssertEqual(avatar.initalsLabel?.text, "?")
-        XCTAssertEqual(avatar.backgroundColor, .gray)
+        let avatarImage = Avatar(placeholderImage: UIImage())
+        let avatarImageView = AvatarImageViewFactory(avatar: avatarImage)
+        XCTAssertNotNil(avatarImageView)
+        XCTAssertEqual(avatarImageView.frame.width, 40)
+        XCTAssertEqual(avatarImageView.frame.height, 40)
+        XCTAssertEqual(avatarImageView.initalsLabel.frame.width, 40)
+        XCTAssertEqual(avatarImageView.initalsLabel.text, "?")
+        XCTAssertEqual(avatarImageView.backgroundColor, .gray)
     }
     
     func testAvatarWithInitals() {
-        let initalsAvatar = Avatar(image: UIImage(), initals: "DL", diameter: 20)
-        XCTAssertNotNil(initalsAvatar)
-        XCTAssertEqual(initalsAvatar.imageView?.frame.width, 20)
-        XCTAssertEqual(initalsAvatar.imageView?.frame.height, 20)
-        XCTAssertEqual(initalsAvatar.initalsLabel?.frame.width, 20)
-        XCTAssertEqual(initalsAvatar.initalsLabel?.text, "DL")
+        let avatarImage = Avatar(placeholderImage: UIImage())
+        let avatarWithInitals = AvatarImageViewFactory(avatar: avatarImage, initals: "DL", diameter: 20)
+        XCTAssertNotNil(avatarWithInitals)
+        XCTAssertEqual(avatarWithInitals.frame.width, 20)
+        XCTAssertEqual(avatarWithInitals.frame.height, 20)
+        XCTAssertEqual(avatarWithInitals.initalsLabel.frame.width, 20)
+        XCTAssertEqual(avatarWithInitals.initalsLabel.text, "DL")
     }
     
 }

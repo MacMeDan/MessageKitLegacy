@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3734BB731E0DD05000641D65 /* AvatarImageViewFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3734BB721E0DD05000641D65 /* AvatarImageViewFactory.swift */; };
 		37CB69AD1E0C798000B3086F /* Avatar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB69AC1E0C798000B3086F /* Avatar.swift */; };
 		37CB69AF1E0C7A1500B3086F /* AvatarTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37CB69AE1E0C7A1500B3086F /* AvatarTests.swift */; };
 		882D75841DE507320033F95F /* MessagesDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 882D75831DE507320033F95F /* MessagesDataSource.swift */; };
@@ -28,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3734BB721E0DD05000641D65 /* AvatarImageViewFactory.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarImageViewFactory.swift; sourceTree = "<group>"; };
 		37CB69AC1E0C798000B3086F /* Avatar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Avatar.swift; sourceTree = "<group>"; };
 		37CB69AE1E0C7A1500B3086F /* AvatarTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AvatarTests.swift; sourceTree = "<group>"; };
 		882D75831DE507320033F95F /* MessagesDataSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesDataSource.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 				88916B461CF0DFE600469F91 /* MessageProtocol.swift */,
 				882D75831DE507320033F95F /* MessagesDataSource.swift */,
 				37CB69AC1E0C798000B3086F /* Avatar.swift */,
+				3734BB721E0DD05000641D65 /* AvatarImageViewFactory.swift */,
 				888CEBFB1D3FD525005178DE /* MessagesViewController.swift */,
 			);
 			path = Sources;
@@ -213,6 +216,7 @@
 				882D75841DE507320033F95F /* MessagesDataSource.swift in Sources */,
 				888CEBFC1D3FD525005178DE /* MessagesViewController.swift in Sources */,
 				37CB69AD1E0C798000B3086F /* Avatar.swift in Sources */,
+				3734BB731E0DD05000641D65 /* AvatarImageViewFactory.swift in Sources */,
 				88916B471CF0DFE600469F91 /* MessageProtocol.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
